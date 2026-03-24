@@ -22,6 +22,16 @@ class notaRecepcionController extends Controller
 
         return response()->json($notas, 200);
     }
+    //OBTENER NOTA POR ID
+    public function show($id){
+        $nota = NotaRecepcion::with(['cliente', 'usuario'])->find($id);
+
+        if (!$nota) {
+            return response()->json(['message' => 'Nota de recepcion no encontrada'], 404);
+        }
+
+        return response()->json($nota, 200);
+    }
 
     //CREAR NOTA
     public function store(Request $request)
