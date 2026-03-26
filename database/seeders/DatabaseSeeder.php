@@ -31,15 +31,25 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        Usuario::factory(3)->create();
-        Cliente::factory(10)->create();
+        Usuario::factory()->create([
+            "nombre"=> "Kae",
+            "apellido"=> "Reyes",
+            "ci"=> "999999",
+            "telefono"=> "7889889",
+            "rol"=> "Admin",
+            "username"=> "KaeReyes",
+            "password"=> "password123"
+        ]);
 
-        NotaRecepcion::factory(5)->create();
-        NotaEntrega::factory(3)->create();
+        Usuario::factory(20)->create();
+        Cliente::factory(100)->create();
 
-        Servicio::factory(5)->create();
-        Producto::factory(5)->create();
+        NotaRecepcion::factory(100)->create();
+        NotaEntrega::factory(100)->create();
 
-        Egreso::factory(5)->create();
+        Servicio::factory(100)->create();
+        Producto::factory(100)->create();
+
+        Egreso::factory(100)->create();
     }
 }

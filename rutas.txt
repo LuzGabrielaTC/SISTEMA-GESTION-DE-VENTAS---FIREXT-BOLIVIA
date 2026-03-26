@@ -1,0 +1,56 @@
+
+  GET|HEAD        / 
+  GET|HEAD        api/clientes 
+  POST            api/clientes 
+  GET|HEAD        api/clientes/{id} 
+  PUT             api/clientes/{id} 
+  DELETE          api/clientes/{id} 
+  GET|HEAD        api/egresos 
+  POST            api/egresos 
+  GET|HEAD        api/egresos/{egreso} 
+  PUT|PATCH       api/egresos/{egreso} 
+  DELETE          api/egresos/{egreso} 
+  GET|HEAD        api/entregas 
+  POST            api/entregas 
+  GET|HEAD        api/entregas/{id} 
+  PUT             api/entregas/{id} 
+DELETE          api/entregas/{id} 
+  GET|HEAD        api/ingresos 
+  POST            api/ingresos 
+  GET|HEAD        api/ingresos/{ingreso} 
+  PUT|PATCH       api/ingresos/{ingreso} 
+  DELETE          api/ingresos/{ingreso} 
+  GET|HEAD        api/items 
+  POST            api/items 
+  GET|HEAD        api/items/{item} 
+  PUT|PATCH       api/items/{item} 
+  DELETE          api/items/{item} 
+  POST            api/login 
+  GET|HEAD        api/productos 
+  POST            api/productos 
+  GET|HEAD        api/productos/{producto} 
+  PUT|PATCH       api/productos/{producto} 
+  DELETE          api/productos/{producto} 
+  GET|HEAD        api/recepciones 
+  POST            api/recepciones 
+  GET|HEAD        api/recepciones/{id} 
+  PUT             api/recepciones/{id} 
+  DELETE          api/recepciones/{id} 
+  GET|HEAD        api/servicios 
+  POST            api/servicios 
+  GET|HEAD        api/servicios/{servicio} 
+  PUT|PATCH       api/servicios/{servicio} 
+  DELETE          api/servicios/{servicio} 
+  GET|HEAD        api/user 
+  GET|HEAD        api/usuarios 
+  POST            api/usuarios 
+  GET|HEAD        api/usuarios/{id} 
+  PUT             api/usuarios/{id} 
+  DELETE          api/usuarios/{id} 
+  GET|HEAD        sanctum/csrf-cookie 
+  GET|HEAD        storage/{path} 
+  PUT             storage/{path} 
+  GET|HEAD        up 
+
+                                                                                                                                               Showing [52] routes
+

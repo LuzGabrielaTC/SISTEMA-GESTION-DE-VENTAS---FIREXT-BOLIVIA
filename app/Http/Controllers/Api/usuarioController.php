@@ -50,6 +50,7 @@ class usuarioController extends Controller
             'username' => $request->username,
             'password' => Hash::make($request->password) //Encriptado
         ]);
+        
         if(!$usuario){
             return response()->json(['message' => 'Error al crear el usuario'], 500);
         }

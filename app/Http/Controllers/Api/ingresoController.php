@@ -10,13 +10,13 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\DB;
 
-class IngresoController extends Controller
+class ingresoController extends Controller
 {
     
     //LISTAR INGRESOS ACTIVOS
     public function index()
     {
-        $ingresos = Ingreso::with(['recepcion.cliente', 'entrega'])
+        $ingresos = Ingreso::with(['notaRecepcion.cliente', 'notaEntrega'])
             ->where('estado', true)
             ->orderBy('created_at', 'desc')
             ->get();
